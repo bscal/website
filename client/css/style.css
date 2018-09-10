@@ -1,0 +1,48 @@
+.scoreboard {
+    padding-top: 64px;
+}
+
+nav {
+    background-color: #1a237e;
+}
+
+.nav-header {
+    margin-left: 16px;
+}
+
+.header-content {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.frontpage-img {
+    height: 25%;
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.frontpage-text {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #1a237e;
+    padding-top: 3%;
+}
+
+.page-footer .footer-copyright {
+    background-color: #1a237e;
+}
+
+.container {
+    color: white;
+}
