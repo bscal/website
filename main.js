@@ -8,25 +8,25 @@ app.use("/node_modules", express.static(path.join(__dirname, "node_modules")));
 app.use(express.static(path.join(__dirname, "client")));
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + "/client/html/index.html");
+    res.sendFile(__dirname + "/pages/index.html");
 });
 
 app.get('/league', function (req, res) {
-    res.sendFile(__dirname + "/client/html/league.html");
+    res.sendFile(__dirname + "/pages/league.html");
 });
 
 // Show Code/Pages
 
 app.get('/escc', function (req, res) {
-    res.sendFile(__dirname + "/client/html/escc.html");
+    res.sendFile(__dirname + "/pages/escc.html");
 });
 
 app.get('/registeration', function (req, res) {
-    res.sendFile(__dirname + "/client/html/registeration.html");
+    res.sendFile(__dirname + "/pages/registeration.html");
 });
 
 app.get('/paperpage', function (req, res) {
-    res.sendFile(__dirname + "/client/html/paper.html");
+    res.sendFile(__dirname + "/pages/paper.html");
 });
 
 app.get('/draft', function (req, res) {
