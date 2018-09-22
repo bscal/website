@@ -26,12 +26,11 @@ var paused = true;
 var buttonPoint = new Point(view.size.width - 128, 16);
 var btnPause = new Shape.Rectangle(buttonPoint, new Size(64, 32));
 btnPause.fillColor = "green";
-btnPause.onClick = function(event) {
+btnPause.onClick = function (event) {
     if (paused) {
         this.fillColor = "red";
         paused = false;
-    }
-    else {
+    } else {
         this.fillColor = "green";
         paused = true;
     }
@@ -51,20 +50,20 @@ uiText.fontSize = 20;
 for (var y = 0; y < height; y++) {
     for (var x = 0; x < width; x++) {
         var shape = new Cell(startPoint, size, x, y);
-        shape.onMouseEnter = function(event) {
+        shape.onMouseEnter = function (event) {
             this.strokeColor = "red";
             this.strokeWidth = 2;
             uiText.content = `${this.x} / ${this.y}`;
         }
-        shape.onMouseLeave = function(event) {
+        shape.onMouseLeave = function (event) {
             this.strokeColor = null;
         }
-        shape.onClick = function(event) {
+        shape.onClick = function (event) {
             this.isLiving = true;
             this.nextState = true;
             this.fillColor = "white";
         }
-        shape.onDoubleClick = function(event) {
+        shape.onDoubleClick = function (event) {
             this.isLiving = false;
             this.nextState = false;
             this.fillColor = "black";
@@ -78,9 +77,9 @@ for (var y = 0; y < height; y++) {
 
 paper.view.draw();
 
-setInterval(function() {
+setInterval(function () {
     if (!paused) {
-        
+
         // Gets each cell neightbor count and sets the cell's nextState;
         for (var i = 0; i < rectList.length; i++) {
             var cell = rectList[i];
@@ -88,18 +87,14 @@ setInterval(function() {
             var num = neightborCount(cell);
             if (num < 2) {
                 cell.nextState = false;
-            }
-            else if (num > 3) {
+            } else if (num > 3) {
                 cell.nextState = false;
-            }
-            else if (num == 3) {
-                cell.nextState = true;   
-            }
-            else if (num == 2) {
+            } else if (num == 3) {
+                cell.nextState = true;
+            } else if (num == 2) {
                 if (cell.isLiving) {
                     cell.nextState = true;
-                }
-                else {
+                } else {
                     cell.nextState = false;
                 }
             }
@@ -112,8 +107,7 @@ setInterval(function() {
             // Sets the Color of the cell
             if (cell.isLiving) {
                 cell.fillColor = "white";
-            }
-            else {
+            } else {
                 cell.fillColor = "black";
             }
         }
