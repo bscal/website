@@ -15,7 +15,7 @@ app.get('/league', function (req, res) {
     res.sendFile(__dirname + "/html/league.html");
 });
 
-// Show Code/Pages
+// Test Code/Pages
 
 app.get('/escc', function (req, res) {
     res.sendFile(__dirname + "/html/escc.html");
@@ -27,6 +27,10 @@ app.get('/registeration', function (req, res) {
 
 app.get('/paperpage', function (req, res) {
     res.sendFile(__dirname + "/html/paper.html");
+});
+
+app.get('/phaser', function (req, res) {
+    res.sendFile(__dirname + "/html/phaser-test.html");
 });
 
 app.get('/draft', function (req, res) {
