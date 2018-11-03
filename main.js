@@ -33,10 +33,6 @@ app.get('/phaser', function (req, res) {
     res.sendFile(__dirname + "/html/phaser-test.html");
 });
 
-app.get('/draft', function (req, res) {
-    res.send("draft");
-});
-
 io.on('connection', function (socket) {
     console.log("A user connected");
     socket.on('disconnect', function () {
