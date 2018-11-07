@@ -15,31 +15,13 @@ var canvas = document.getElementById("canvas1");
 paper.setup(canvas);
 
 var rectList = []
-var width = 96;
-var height = 56;
-var tileWidth = 16;
-var tileHeight = 16;
+var width = 114;
+var height = 64;
+var tileWidth = 12;
+var tileHeight = 12;
 var startPoint = new Point(tileWidth, tileHeight);
 var size = new Size(tileWidth, tileHeight);
 var paused = true;
-
-var buttonPoint = new Point(view.size.width - 128, 16);
-var btnPause = new Shape.Rectangle(buttonPoint, new Size(64, 32));
-btnPause.fillColor = "green";
-btnPause.onClick = function (event) {
-    if (paused) {
-        this.fillColor = "red";
-        paused = false;
-    } else {
-        this.fillColor = "green";
-        paused = true;
-    }
-}
-
-var uiPoint = new Point(view.size.width - 128, 80);
-var uiText = new PointText(uiPoint);
-uiText.content = "0/0"
-uiText.fontSize = 20;
 
 // var btnText = new PointText(buttonPoint.add([32, 20]));
 // btnText.content = "Pause"
@@ -75,6 +57,25 @@ for (var y = 0; y < height; y++) {
     startPoint = startPoint.add([-width * tileWidth, tileHeight]);
 }
 
+var buttonPoint = new Point(view.size.width - 128, 16);
+var btnPause = new Shape.Rectangle(buttonPoint, new Size(64, 32));
+btnPause.fillColor = "green";
+btnPause.onClick = function (event) {
+    if (paused) {
+        this.fillColor = "red";
+        paused = false;
+    } else {
+        this.fillColor = "green";
+        paused = true;
+    }
+}
+
+var uiPoint = new Point(view.size.width - 128, 80);
+var uiText = new PointText(uiPoint);
+uiText.content = "0/0"
+uiText.fontSize = 20;
+
+// RENDER
 paper.view.draw();
 
 setInterval(function () {

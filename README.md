@@ -1,12 +1,10 @@
 # My personal website
 
-This is by know means a finished project and not very professional done in most areas.
+This is by no means a finished project and not very professioally done in most areas.
 
 This is my personal website. I use it to play around with ideas, show off work, and practice with libraries.
 
 Website: bscal.me
-
-I will get a domain some day.
 
 # About
 
