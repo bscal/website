@@ -11,11 +11,14 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + "/html/index.html");
 });
 
+// Test Code/Pages
+app.get('/solarsystem', function (req, res) {
+    res.sendFile(__dirname + "/html/solarsystem.html");
+});
+
 app.get('/league', function (req, res) {
     res.sendFile(__dirname + "/html/league.html");
 });
-
-// Test Code/Pages
 
 app.get('/escc', function (req, res) {
     res.sendFile(__dirname + "/html/escc.html");

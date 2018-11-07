@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Solar System</title>
+
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+		
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io();
+        </script>
+    </head>
+
+    <body>
+        <nav class="app-bar-expand-md" data-role="appbar">
+            <a href="#" class="d-block brand no-hover">
+                <span class="border bd-red border-radius p-3">B</span>
+            </a>
+
+            <ul class="app-bar-menu">
+                <li><a href="league">League Demo</a></li>
+                <li><a href="paperpage">Paper Demo</a></li>
+                <li><a href="escc">ESCC Demo</a></li>
+            </ul>
+        </nav>
+		
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/three.min.js"></script>
+        <script src="js/system.js"></script>
+<!--      <script src="js/planets.js"></script>
+		<script src="js/solarsystem.js"></script>-->
+        <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    </body>
+</html>

@@ -5,40 +5,68 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+        <link href="metro-icons.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
 
-        <title>Website</title>
-
-		<style>
-			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
-		</style>
-		
-        <script src="/socket.io/socket.io.js"></script>
-        <script>
-            var socket = io();
-        </script>
+        <title>bscal</title>
     </head>
 
     <body>
-        <nav class="app-bar-expand-md" data-role="appbar">
-            <a href="#" class="d-block brand no-hover">
-                <span class="border bd-red border-radius p-3">B</span>
+        <nav class="app-bar-expand-md" data-role="appbar" data-expand-point="md">
+            <a href="#" class="brand no-hover">
+                <span class="p-1">
+                    <h2>B<sub>scal</sub></h5>
+                </span>
             </a>
-
-            <ul class="app-bar-menu">
-                <li><a href="league">League Demo</a></li>
-                <li><a href="paperpage">Paper Demo</a></li>
-                <li><a href="escc">ESCC Demo</a></li>
-            </ul>
         </nav>
-		
+
+        <div class="frontpage-text">
+            <h1 class="text-center frontpage-text">bscal</h1>
+            <p class="text-center frontpage-text">Welcome to my Laning Page.</p>
+        </div>
+
+        <div class="seperator"></div>
+
+        <div class="frontpage-text text-center">
+            <h5 class="text-center">About Me</h5>
+            <p class="text-center"> 
+                Hi my names is Jonathan, I am 20 years old and I have been teaching myself programming for around 2 years now. Programming
+                is something I really enjoy both doing and learning in my life. I got interested in programming through Minecraft and game/game 
+                engine development. I got better by practicing programming, watching videos, reading books and stackoverflow, and also looking through 
+                how other people code. My favorite programming languages are C++ then Java. Now I have gotten into full stack web development 
+                too. I feel confident in my ability to learn or adapt at languages/libraries I am not so familiar with.
+            </p>
+        </div>
+
+        <div class="seperator"></div>
+
+        <div class="frontpage-text">
+            <h5 class="text-center pb-3">My SkillSet</h5>
+            <ul class="list-center">
+                <li>C++</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>C</li>
+                <li>Git</li>
+                <li>MySQL</li>
+            </ul>
+            
+            <div class="seperator-no-line"></div>
+
+            <div class="text-center">
+                <span class="mif-github mif-2x line-center"></span>
+                <a href="https://github.com/bscal" class="line-center"><h5>My Github</h5></a>
+            </div>
+        </div>
+        
+        <footer class="footer"></footer>
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="js/three.min.js"></script>
-        <script src="js/system.js"></script>
-<!--      <script src="js/planets.js"></script>
-		<script src="js/solarsystem.js"></script>-->
         <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     </body>
 </html>

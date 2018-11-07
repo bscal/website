@@ -4,7 +4,7 @@ This is by know means a finished project and not very professional done in most 
 
 This is my personal website. I use it to play around with ideas, show off work, and practice with libraries.
 
-You can check it out at 159.89.46.131 if the server it up.
+Website: bscal.me
 
 I will get a domain some day.
 
