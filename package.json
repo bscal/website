@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.0.1",
-  "description": "website made with socket.io and kube\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dnodejs, socket.io and kube",
+  "description": "website made with socket.io",
   "main": "main.js",
   "dependencies": {
     "express": "^4.16.3",

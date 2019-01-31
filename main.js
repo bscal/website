@@ -28,7 +28,7 @@ app.get('/registeration', function (req, res) {
     res.sendFile(__dirname + "/html/registeration.html");
 });
 
-app.get('/paperpage', function (req, res) {
+app.get('/paper', function (req, res) {
     res.sendFile(__dirname + "/html/paper.html");
 });
 
