@@ -1,7 +1,7 @@
 {
   "name": "website",
-  "version": "0.0.1",
-  "description": "website made with socket.io",
+  "version": "1.0.0",
+  "description": "website made",
   "main": "main.js",
   "dependencies": {
     "clipboard": "^2.0.4",
