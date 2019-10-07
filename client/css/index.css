@@ -37,6 +37,10 @@
     display:inline-block
 }
 
+.email-text {
+    border-bottom: 2px dotted gray;
+}
+
 .toast {
     background-color: lightslategrey;
 }
