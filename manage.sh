@@ -1,0 +1,1 @@
+screen -dmS website bash -c 'echo waiting 3 senconds...; sleep 3; exec node main'
