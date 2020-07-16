@@ -1,6 +1,7 @@
 .frontpage-text {
     margin-left: 20%;
     margin-right: 20%;
+    position: relative;
 }
 
 ul {
@@ -56,11 +57,8 @@ ul {
 body {
     position: relative;
     min-height: 100%;
+    margin-top: 10vh;
     background-color: rgb(233, 233, 233);
-}
-
-h1 {
-    margin-top: 2em;
 }
 
 .seperator {
